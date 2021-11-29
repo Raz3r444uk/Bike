@@ -190,6 +190,11 @@ select {
   display: flex;
   margin-left: 20px;
   margin-right: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .navigation__item {
@@ -317,6 +322,193 @@ select {
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
+}
+
+.life {
+  padding-top: 119px;
+  padding-bottom: 125px;
+}
+
+.life-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 80px;
+}
+
+.life-top__title {
+  font-weight: 600;
+  font-size: 31px;
+  line-height: 130%;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 25px;
+  padding-left: 15px;
+}
+
+.life-top__description {
+  max-width: 645px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  color: var(--white);
+  opacity: 0.8;
+  padding-left: 14px;
+}
+
+.life-bottom__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.life-bottom__item {
+  padding: 35px 0px;
+  width: 264px;
+}
+
+.life-bottom__item {
+  margin-right: 30px;
+  margin-bottom: 50px;
+}
+
+.life-bottom__item:nth-child(4n+4) {
+  margin-right: 0px;
+}
+
+.life-bottom__item:hover {
+  z-index: 1;
+  background: #212122;
+}
+
+.life-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.life-card__card {
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  background: #ffffff;
+  opacity: 0.1;
+  -webkit-backdrop-filter: blur(441px);
+          backdrop-filter: blur(441px);
+  padding: 13px;
+  margin-bottom: 25px;
+}
+
+.life-card__title {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 150%;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: var(--white);
+  z-index: 10;
+}
+
+.life-card__description {
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  color: var(--white);
+  opacity: 0.8;
+}
+
+.card-icon {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  top: 13px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.first_card {
+  background: url(../img/first.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.second_card {
+  background: url(../img/two.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.third_card {
+  background: url(../img/three.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.four_card {
+  background: url(../img/four.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.five_card {
+  background: url(../img/five.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.six_card {
+  background: url(../img/six.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.seven_card {
+  background: url(../img/seven.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.eight_card {
+  background: url(../img/eight.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 @media (prefers-reduced-motion: reduce) {
