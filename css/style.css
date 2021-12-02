@@ -269,15 +269,8 @@ select {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-}
-
-.better-teach__content-left {
   background: url(../img/rolu.png) no-repeat;
-  background-position-x: -1px;
-  height: 490px;
-  width: 392px;
-  background-size: cover;
-  margin-right: 120px;
+  background-position-x: 76px;
 }
 
 .content-left__title {
@@ -300,7 +293,7 @@ select {
 }
 
 .content-right {
-  padding-top: 35px;
+  padding-top: 57px;
   max-width: 558px;
   width: 100%;
   display: -webkit-box;
@@ -327,10 +320,11 @@ select {
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
+  margin-bottom: 35px;
 }
 
 .life {
-  padding-top: 119px;
+  padding-top: 110px;
   padding-bottom: 125px;
 }
 
@@ -514,6 +508,130 @@ select {
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+.service {
+  padding-top: 105px;
+  padding-bottom: 120px;
+}
+
+.service__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(../img/Bike-bg.png);
+  background-repeat: no-repeat;
+  background-position-y: -33px;
+  background-position-x: right;
+  background-size: 604px 649px;
+}
+
+.service__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 578px;
+  width: 100%;
+  margin-right: 122px;
+  padding-left: 10px;
+}
+
+.service__left-title {
+  font-weight: 600;
+  font-size: 31px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 38px;
+}
+
+.service__left-description {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--white);
+  opacity: 0.8;
+  margin-bottom: 30px;
+}
+
+.service__left-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 49px;
+}
+
+.service__left-label {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 160%;
+  position: relative;
+  cursor: pointer;
+  padding-left: 25px;
+  color: var(--white);
+  margin-bottom: 15px;
+}
+
+.service__left-label:last-child {
+  margin-bottom: 0px;
+}
+
+.service__left-button {
+  width: 130px;
+  padding: 15px 30px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.service__left-input {
+  display: none;
+}
+
+.service__left-input + span {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 3px;
+  top: 9px;
+  text-align: center;
+  border: 2px solid #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+  line-height: 20px;
+  margin-left: -4px;
+}
+
+.service__left-input + span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  background-image: url(../img/icon.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.service__left-input:checked + span::before {
+  opacity: 1;
 }
 
 @media (prefers-reduced-motion: reduce) {
